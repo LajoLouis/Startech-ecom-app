@@ -1,0 +1,100 @@
+{
+    "starTech" : [
+        {
+            "id" : 1,
+            "name": "nike 1",
+            "price": 2500,
+            "img": "/img/nike1.jpeg",
+            "featured": false,
+            "topSelling": true
+        },
+        {
+            "id" : 2,
+            "name": "nike 2",
+            "price": 2500,
+            "img": "/img/nike2.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 3,
+            "name": "nike 3",
+            "price": 600,
+            "img": "/img/nike3.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 4,
+            "name": "nike 4",
+            "price": 4500,
+            "img": "/img/nike4.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 5,
+            "name": "nike 5",
+            "price": 25000,
+            "img": "/img/nike5.jpeg",
+            "featured": true,
+            "topSelling": true
+        },
+        {
+            "id" : 6,
+            "name": "nike 6",
+            "price": 1500,
+            "img": "/img/nike6.jpeg",
+            "featured": false,
+            "topSelling": true
+        },
+        {
+            "id" : 7,
+            "name": "adidas 1",
+            "price": 3500,
+            "img": "/img/adidas1.jpeg",
+            "featured": false,
+            "topSelling": true
+        },
+        {
+            "id" : 8,
+            "name": "adidas 2",
+            "price": 1500,
+            "img": "/img/adidas2.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 9,
+            "name": "adidas 3",
+            "price": 1100,
+            "img": "/img/adidas3.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 10,
+            "name": "adidas 4",
+            "price": 800,
+            "img": "/img/adidas4.jpeg",
+            "featured": false,
+            "topSelling": false
+        },
+        {
+            "id" : 11,
+            "name": "adidas 5",
+            "price": 200,
+            "img": "/img/adidas5.jpeg",
+            "featured": true,
+            "topSelling": false
+        },
+        {
+            "id" : 12,
+            "name": "adidas 6",
+            "price": 900,
+            "img": "/img/adidas6.jpeg",
+            "featured": false,
+            "topSelling": true
+        }
+    ]
+}
