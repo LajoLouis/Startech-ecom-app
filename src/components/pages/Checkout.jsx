@@ -59,7 +59,7 @@ function Checkout() {
                   <td>{item.product?.name}</td>
                   <td className="w-[100px]">
                     <img
-                      src={"https://startech-backend-60s5.onrender.com" + item.product?.img}
+                      src={"https://startech-backend-60s5.onrender.com/" + item.product?.img}
                       alt=""
                       className="h-[70px] w-full"
                     />
