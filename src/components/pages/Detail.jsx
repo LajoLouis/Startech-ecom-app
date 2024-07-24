@@ -10,7 +10,7 @@ function Detail() {
   return (
     <div className='flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between space-x-4'>
         <div className="m-auto xs:w-[90%] md:w-[50%]">
-            <img src={"http://localhost:8000/"+ shoeItem?.img} alt=""  className='h-[400px] w-[400px] rounded-lg'/>
+            <img src={"https://startech-backend-60s5.onrender.com"+ shoeItem?.img} alt=""  className='h-[400px] w-[400px] rounded-lg'/>
         </div>
         <div className='xs:w-[70%] xs:mx-auto md:w-[50%]'>
             <h2 className='text-2xl font-bold mb-[10px] border-b-2'>{shoeItem?.name}</h2>

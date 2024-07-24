@@ -30,13 +30,13 @@ export const EcomProvider = ({ children }) => {
   }, [cartItems]);
 
   const fetchProduct = async () => {
-    const res = await fetch("http://localhost:8000/api/product");
+    const res = await fetch("https://startech-backend-60s5.onrender.com/api/product");
     const data = await res.json();
     setProduct(data);
   };
   const addToCart = async (productId) => {
     try {
-      const res = await fetch("http://localhost:8000/api/add-to-cart", {
+      const res = await fetch("https://startech-backend-60s5.onrender.com/api/add-to-cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ export const EcomProvider = ({ children }) => {
   };
   const fetchCart = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/cart", {
+      const res = await fetch("https://startech-backend-60s5.onrender.com/api/cart", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const EcomProvider = ({ children }) => {
       return;
     }
     try {
-      const res = await fetch("http://localhost:8000/api/update-quantity", {
+      const res = await fetch("https://startech-backend-60s5.onrender.com/api/update-quantity", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -116,7 +116,7 @@ export const EcomProvider = ({ children }) => {
   };
   const deleteItem = async (productId) => {
     try {
-      const res = await fetch("http://localhost:8000/api/remove-item", {
+      const res = await fetch("https://startech-backend-60s5.onrender.com/api/remove-item", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -145,7 +145,7 @@ export const EcomProvider = ({ children }) => {
 
   const createOrder = async (transaction_id, orderId) => {
     try {
-      const response = await fetch("http://localhost:8000/api/payment/verify", {
+      const response = await fetch("https://startech-backend-60s5.onrender.com/api/payment/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

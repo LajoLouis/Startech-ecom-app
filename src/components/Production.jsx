@@ -17,7 +17,7 @@ function Production({ item }) {
     <div className="xs:mx-auto m-5 border-2 border-none w-max rounded-lg shadow-lg shadow-blue-400 transform hover:scale-110 transition ease duration-700 bg-[#f5f5f5]">
       <Link to={`/detail/${item._id}`}>
         <img
-          src={"http://localhost:8000/" + item.img}
+          src={"https://startech-backend-60s5.onrender.com" + item.img}
           alt=""
           className="h-[200px] w-[200px] rounded-lg opacity-90"
         />
