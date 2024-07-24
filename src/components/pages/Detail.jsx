@@ -8,7 +8,7 @@ function Detail() {
     const {addToCart , product} = useContext(EcomContext)
     const shoeItem = product.find((item)=> (item._id) === (shoeid))
   return (
-    <div className='flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between'>
+    <div className='flex xs:flex-col md:flex-row px-[5%] py-[3%] justify-between space-x-4'>
         <div className="m-auto xs:w-[90%] md:w-[50%]">
             <img src={"http://localhost:8000/"+ shoeItem?.img} alt=""  className='h-[400px] w-[400px] rounded-lg'/>
         </div>

@@ -18,7 +18,7 @@ function Header() {
     function logout(){
         deleteItem();
         dispatch({type: "setToken", payload:null});
-        showAndHide("success", "you are now signed out")
+        showAndHide("success", "You are now signed out")
     }
 
     const showHeader = (
@@ -38,8 +38,8 @@ function Header() {
         <div onClick={()=> setOpen(!open)} className={`fixed lg:hidden top-0 w-full bg-black z-[20] ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}></div>
         <div className={`fixed lg:hidden left-0 top-0 xs:w-[150px] sm:w-[200px] rounded-br-[10px] xs:h-[50%] sm:h-[70%] overflow-auto z-[30] bg-blue-950  transition-all duration-1000 ${open ? "translate-x-[0px] bg-opacity-90" : "translate-x-[-500px] bg-opacity-100"}`}>
         <nav className='flex flex-col lg:space-x-4 text-[15px] space-y-4 pt-20 px-10  text-white'>
-            <Link to="">Home</Link>
-            <Link to="">Products</Link>
+            <Link to="/">Home</Link>
+            <Link to="/products">Products</Link>
             <Link to="/login">Login</Link>
             <Link to="/register">Register</Link>
         </nav> 

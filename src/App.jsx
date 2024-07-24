@@ -26,29 +26,29 @@ function App() {
         <AuthProvider defaultState={authInitialState}>
           <EcomProvider>
             <Router>
-              <Header />
-              <Alert />
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <>
-                      <div className="bg-[url('/img/psbg2.jpg')] bg-center bg-opacity-15 ">
+              <div className="bg-[url('/img/psbg2.jpg')] bg-center bg-opacity-15 ">
+                <Header />
+                <Alert />
+                <Routes>
+                  <Route
+                    path="/"
+                    element={
+                      <>
                         <Featured />
                         <TopSelling />
-                      </div>
-                    </>
-                  }
-                />
-                <Route path="/products" element={<Products />} />
-                <Route path="/detail/:id" element={<Detail />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/checkout" element={<Checkout />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/thank-you" element={<ThankYou />} />
-              </Routes>
-              <Footer />
+                      </>
+                    }
+                  />
+                  <Route path="/products" element={<Products />} />
+                  <Route path="/detail/:id" element={<Detail />} />
+                  <Route path="/cart" element={<Cart />} />
+                  <Route path="/checkout" element={<Checkout />} />
+                  <Route path="/register" element={<Register />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/thank-you" element={<ThankYou />} />
+                </Routes>
+                <Footer />
+              </div>
             </Router>
           </EcomProvider>
         </AuthProvider>
