@@ -1,8 +1,13 @@
 import { useContext } from "react";
 import EcomContext from "../../context/EcomContext";
+import { Navigate } from "react-router-dom";
 
 function Checkout() {
   const { cartItems, totalAmount } = useContext(EcomContext);
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login"/>
+  }
 
   const handleCheckout = async (e) => {
     e.preventDefault();
