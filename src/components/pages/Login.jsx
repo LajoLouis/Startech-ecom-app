@@ -7,7 +7,7 @@ import useLocalStorage from "../../hooks/useLocalStorage"
 function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const {showAndHide} = useContext(EcomContext)
+    const {showAndHide, isAuthenticated} = useContext(EcomContext)
     const [state, dispatch] = useContext(AuthContext)
     const {setItem} = useLocalStorage("auth-token")
 

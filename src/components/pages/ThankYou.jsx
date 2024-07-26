@@ -3,7 +3,7 @@ import { Link, useSearchParams, Navigate } from 'react-router-dom'
 import EcomContext from '../../context/EcomContext'
 
 function ThankYou() {
-  const {createOrder} = useContext(EcomContext)
+  const {createOrder, isAuthenticated} = useContext(EcomContext)
   const [searchParams] = useSearchParams()
   const tx_ref = searchParams.get("tx_ref")
   const transaction_id = searchParams.get("transaction_id")

@@ -9,7 +9,7 @@ function Register() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
-    const {showAndHide} = useContext(EcomContext)
+    const {showAndHide, isAuthenticated} = useContext(EcomContext)
 
     if (isAuthenticated) {
         return <Navigate to="/"/>
