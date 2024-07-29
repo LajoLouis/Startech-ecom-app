@@ -72,7 +72,7 @@ function Header() {
   );
 
   const showAuthHeader = (
-    <div className="header sticky top-0 z-[20] flex items-center justify-between py-[15px] px-[30px] bg-blue-950">
+    <div className="fixed top-0 z-[20] w-full flex items-center justify-between py-[15px] px-[30px] bg-blue-950">
       <div>
         <a href="">
           <h1 className="text-[24px] text-white font-extrabold">Star Tech</h1>
