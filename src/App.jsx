@@ -27,7 +27,9 @@ function App() {
           <EcomProvider>
             <Router>
               <div className="bg-[url('/img/psbg2.jpg')] bg-center bg-opacity-15 ">
-                <Header />
+                <div className="mb-[100px]">
+                  <Header />
+                </div>
                 <Alert />
                 <Routes>
                   <Route
